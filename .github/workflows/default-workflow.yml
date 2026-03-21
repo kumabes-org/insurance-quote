@@ -1,0 +1,17 @@
+name: "Default Workflow"
+
+on: push
+
+jobs:
+  call-workflow-ci-java-maven:
+    uses: kumabes-org/reusable-workflows-ci-java-maven/.github/workflows/ci.yml@main
+    with:
+      runs-on: "ubuntu-latest"
+      environment: "production"
+      working-directory: "app"
+      shell: "bash"
+      project-name: "quotes"
+      java-distribution: "zulu"
+      java-version: "21"
+      maven-version: "3.9.4"
+    secrets: inherit
