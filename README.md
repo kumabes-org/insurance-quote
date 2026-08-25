@@ -6,3 +6,8 @@
 - Records: Utilizados para DTOs (Data Transfer Objects) garantindo imutabilidade e concisão.
 - Global Exception Handler: Tratamento centralizado de erros para respostas padronizadas (RFC 7807).
 - Arquitetura: Camadas segregadas (Controller, Service, DTO, Exception Handling).
+
+## Permission Denied Error
+```bash
+ git update-index --chmod=+x ./mvnw
+```
